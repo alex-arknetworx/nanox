@@ -516,7 +516,7 @@ $(MW_DIR_LIB)/$(LIBNAMESO): $(MW_DIR_LIB)/$(LIBNAME) $(OBJS) $(CXXOBJS)
 ifeq ($(ARCH), MACOSX)
 	$(CC) -shared -fpic -undefined dynamic_lookup -o $@ $(LDFLAGS) $(OBJS) $(CXXOBJS)
 else
-	$(CC) -shared -o $@ -Wl,--whole-archive $(OBJS) $(CXXOBJS) -Wl,--no-whole-archive
+	$(CC) -shared -fpic -o $@ -Wl,--whole-archive $(OBJS) $(CXXOBJS) -Wl,--no-whole-archive
 endif
 endif
 endif
