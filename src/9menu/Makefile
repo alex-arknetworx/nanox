@@ -11,6 +11,6 @@
 
 9menu	: 9menu.c
 #	cp -a $(X11_headers) ../include/
-	$(CC) 9menu.c -L../lib -lNX11 -lnano-X -I../include -I../nx11 -o 9menu
+	$(CC) -fpic 9menu.c -L../lib -lNX11 -lnano-X -I../include -I../nx11 -o 9menu
 clean	:
 	rm 9menu
