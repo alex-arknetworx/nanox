@@ -21,6 +21,7 @@ OBJS =
 
 # demos should be built after the libs !
 dirs := \
+	$(MW_DIR_SRC)/jpeg-9f \
 	$(MW_DIR_SRC)/drivers \
 	$(MW_DIR_SRC)/engine \
 	$(MW_DIR_SRC)/fonts \
